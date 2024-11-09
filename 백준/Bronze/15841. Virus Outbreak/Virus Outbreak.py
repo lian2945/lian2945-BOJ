@@ -1,11 +1,9 @@
 memo = {1:1, 2:1}
+n=0
 def pibo(n):
-    if n in memo:
-        return memo[n]
-    else:
-        memo[n] = pibo(n-1) + pibo(n-2)
-        return memo[n]
-n=1
+    if not n in memo:
+        memo[n] = pibo(n-1) + pibo(n-2)    
+    return memo[n]
 while(n!=-1):
     n = int(input())
     if(n==-1):
