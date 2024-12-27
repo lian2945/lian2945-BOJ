@@ -7,7 +7,7 @@ int main()
     cin >> n;
     if(a+b>=2*n)
     {
-        cout << a-n+b-n;
+        cout << a+b-2*n;
     }
     else
     {
