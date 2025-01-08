@@ -5,8 +5,6 @@ def hanoi(n, a, b, c):
         hanoi(n-1, a, c, b)
         print(f"{a} {c}")
         hanoi(n-1, b, a, c)
-
-t=1
 n=int(input())
 print(2**n-1)
 if(n<=20):
