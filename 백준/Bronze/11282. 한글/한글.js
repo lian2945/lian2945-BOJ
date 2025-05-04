@@ -1,0 +1,1 @@
+console.log(String.fromCharCode(0xAC00 + Number(require('fs').readFileSync(0)) - 1));
