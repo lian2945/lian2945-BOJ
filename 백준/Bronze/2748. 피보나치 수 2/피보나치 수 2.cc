@@ -1,14 +1,20 @@
-#include <iostream>
-using namespace std;
-int main() {
-    long long n,a=0,b=1,tmp;
-    cin >> n;
-    for(long long i=0;i<n;i++)
+#include <stdio.h>
+long long int n[91] = {0, 1, };
+long long int f(long long int a)
+{
+    if(a<2)
     {
-        tmp=b;
-        b+=a;
-        a=tmp;
+        return a;
     }
-    cout << a;
-    return 0;
+    else if(n[a]==0)
+    {
+        n[a]=f(a-1)+f(a-2);
+    }
+    return n[a];
+}
+int main(void)
+{
+    int a;
+    scanf("%d",&a);
+    printf("%lld",f(a));
 }
