@@ -1,7 +1,7 @@
 import math
 
-gcd, lcd = map(int, input().split())
-d = lcd // gcd
+gcd, lcm = map(int, input().split())
+d = lcm // gcd
 a, b = 0, 0
 
 for i in range(1, int(math.isqrt(d)) + 1):
